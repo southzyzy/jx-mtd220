@@ -1,0 +1,334 @@
+/* Generic styles */
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+
+.hidden {
+	display: none;
+}
+
+.margin-negative {
+	margin-top: -5em;
+}
+
+#loading-cover {
+	position: fixed;
+	background-color: #000 !important;
+	z-index: 9999 !important;
+	width: 100%;
+	min-height: 100%;
+	pointer-events: none;
+}
+
+#to-top {
+	display: none;
+	position: fixed;
+	top: initial;
+	bottom: 30px;
+	right: 30px;
+	height: 50px;
+	width: 50px;
+	line-height: 30px;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: none;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+
+#to-top:hover {
+	background-color: rgba(235, 76, 60, 0.8);;
+	border: none;
+	-webkit-transition: background-color 0.5s ease-in-out !important;
+	-moz-transition: background-color 0.5s ease-in-out !important;
+	-o-transition: background-color 0.5s ease-in-out !important;
+	-ms-transition: background-color 0.5s ease-in-out !important;
+	transition: background-color 0.5s ease-in-out !important;
+}
+
+#to-top:active, #to-top:focus {
+	color: rgb(250, 250, 250);
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-o-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+
+
+/* Colours */
+.text-stroke-border {
+	text-shadow: 3px 3px 5px rgba(40, 40, 40, 0.7);
+}
+
+.text-applered {
+	color: #BD2527 !important;
+}
+
+.text-blue {
+	color: blue;
+}
+
+.text-red {
+	color: red;
+}
+
+.text-saddlebrown {
+	color: saddlebrown;
+}
+
+.text-darkgreen {
+	color: darkgreen;
+}
+
+.text-deepskyblue {
+	color: deepskyblue;
+}
+
+.border-applered {
+	border-color: #BD2527 !important;
+}
+
+.img-border {
+	border: 1px solid black;
+}
+.btn-applered {
+	background-color: rgba(0, 0, 0, 0);
+	color: #BD2527;
+}
+
+.btn-applered:hover, .btn-applered:focus {
+	color: #ff5252;
+}
+
+.btn-applered-filled {
+	background-color: #BD2527;
+	border-color: #BD2527;
+	color: rgb(250, 250, 250);
+	font-weight: 300;
+	letter-spacing: .2em;
+}
+
+.btn-applered-filled:hover, .btn-applered-filled:focus {
+	background-color: #ff5252;
+	border-color: #ff5252;
+	color: rgb(255, 255, 255);
+}
+
+a {
+	color: #BD2527;
+}
+
+a:hover, a:focus {
+	color: #ff5252;
+}
+
+
+/* Button override */
+.btn-no-animate, .btn-no-animate:hover, .btn-no-animate:active, .btn-no-animate:focus {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	top: 0;
+}
+
+
+/* Navigation override */
+.site-navbar {
+	z-index: 999 !important;
+}
+.site-navbar-top {
+	padding-bottom: 15px !important;
+}
+
+@media (min-width: 768px) {
+	.site-navbar-fixed {
+		top: 0;
+		position: fixed;
+		width: 100%;
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+	.transparent-nav {
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+	}
+
+	.transparent-nav > .site-navbar-top {
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		opacity: 0;
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+	.transparent-nav > .site-navigation {
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+
+	.transparent-nav > .site-navigation .site-menu > li > a {
+		color: rgb(250, 250, 250);
+		text-shadow: 2px 3px 5px rgba(40, 40, 40, 0.7);
+	}
+
+	.transparent-nav .site-navigation .site-menu > li.active > a {
+		color: #ff5252;
+		text-shadow: 2px 3px 5px rgba(40, 40, 40, 0.45);
+	}
+
+	.site-navbar-top {
+		padding-top: 15px !important;
+	}
+}
+
+.site-mobile-menu-logo {
+	margin: 0 !important;
+	width: 100%;
+}
+
+.site-mobile-menu-logo > img, .site-logo > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100px;
+	width: auto;
+}
+
+.site-navigation {
+	border-bottom: 1px solid #f3f3f4;
+}
+
+.arrow-collapse > .fa,
+.arrow-collapse > .fab,
+.arrow-collapse > .fal,
+.arrow-collapse > .far,
+.arrow-collapse > .fas {
+	padding-top: 0.6em;
+}
+
+
+/* Landing Page Banner */
+.site-blocks-cover {
+	background-color: rgb(0, 0, 0);
+	background-image: url("../img/index/banner.jpg");
+	background-position: center;
+	background-size: cover;
+	min-height: 750px;
+	position: relative;
+}
+
+
+/* Menu */
+@media (min-width: 768px) {
+	.menu-category {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 7em;
+	}
+}
+
+.img-menu {
+	position: relative;
+	overflow: hidden;
+}
+
+.img-menu:after {
+	content: "";
+	display:inline-block;
+	vertical-align: top;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+}
+
+.img-menu > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	min-height: 239px;
+}
+
+.accordion-heading {
+	cursor: pointer;
+}
+
+.accordion-heading-content {
+	display: inline-block;
+	padding: 0.375rem 0.75rem;
+	line-height: 1.5;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.05em;
+}
+
+/* Our Stores */
+.store-map {
+	border: 0 !important;
+	width: 100%;
+	height: auto;
+}
+
+.limit-height {
+	max-height: 250px;
+}
+
+/* Franchise and Promotions Form */
+
+.mhyd-form input, .mhyd-form select {
+	background-color: rgba(0, 0, 0, 0);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid 1.5px lightgrey;
+	border-radius: 0px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+.mhyd-form select:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.mhyd-form .form-control:focus, .mhyd-form select:focus {
+	border-color: #BD2527;
+	-webkit-transition: border-color 770ms linear;
+	-moz-transition: border-color 770ms linear;
+	-o-transition: border-color 770ms linear;
+	-ms-transition: border-color 770ms linear;
+	transition: border-color 770ms linear;
+}
+
+.mhyd-form .form-control::placeholder {
+	color: lightgrey;
+}
+
+.mhyd-form .form-group {
+	padding-top: 2em;
+}
